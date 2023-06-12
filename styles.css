@@ -1,0 +1,682 @@
+/* Estilos básicos para la página */
+
+body {
+    font-family: 'Rubik', sans-serif;
+	margin: 0;
+	padding: 0;
+    background-color: #7da7d9;
+    color: white;
+}
+
+
+/* Estilos para el encabezado */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    background-color: #1465ad;
+    border: black solid 2px;
+}
+
+
+/* Estilos para los enlaces de la navegación */
+
+nav {
+    position: relative;
+    z-index: 9999;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    height: 100px;
+}
+
+nav ul li:last-child a {
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* Estilos para el contenido */
+
+main {
+	padding: 0px;
+    background-image: url("/img/lluvia.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+p {
+	line-height: 1.5;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+
+/* hero */
+
+.hero {
+    background-image: url("/img/aaaa.png");
+    height: 400px;
+    animation: moveBackground 10s ease-in-out infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* juegos */
+
+.games {
+    padding: 50px;
+    text-align: center;
+}
+
+.games:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.game-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.game-list li {
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.game-list a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.game-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.game-list a:hover img {
+    transform: scale(1.1);
+}
+
+.game-list p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Tutorial de pago */
+
+.Tuto {
+    display: flex;
+    background-color: #7da7d9;
+    border: black solid 2px;
+}
+
+.tuto-section {
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    color: white;
+}
+
+.tuto-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Videos de juegos */
+
+.video-section {
+    padding: 20px;   
+}
+.video-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-section h2 {
+    text-align: center;
+}
+
+.video-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.video-wrapper iframe {
+    flex: 1 1 30%;
+    margin-right: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #1465ad;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: black solid 2px;
+}
+
+.footer-left {
+    text-align: center;
+}
+
+.footer-left img {
+    max-height: 50px;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    text-align: center;
+}
+
+.footer-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-right li {
+    margin: 0 10px;
+}
+
+.footer-right a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Acerca De */
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.about-text {
+    width: 50%;
+    padding-right: 50px;
+    border-right: 1px dashed #ccc;
+}
+
+.about-text h2 {
+    margin-top: 0;
+}
+
+.about-image {
+    width: 40%;
+    height: 400px;
+    background-image: url('/img/Logo.gif');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* Contacto */
+
+.Contacto-text {
+	padding: 20px;
+	text-align: center;
+}
+
+.Contacto-text h1 {
+	font-size: 3.5rem;
+	margin: 0;
+}
+
+.Contacto-text p {
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+form {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	margin: 50px auto;
+	padding: 20px;
+	max-width: 500px;
+    background-color: #1465ad;
+}
+
+label {
+	font-size: 1.2rem;
+	margin-top: 10px;
+}
+
+input, textarea {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+	padding: 10px;
+    background-color: #7da7d9;
+}
+
+button {
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.2rem;
+	padding: 10px;
+    background-color: #7da7d9;
+}
+
+button:hover {
+	background-color: #1465ad;
+}
+
+
+
+/* Login */
+
+.Logueo{
+    width: 100%;
+    height: 100vh;
+    background: url(/img/Logo.gif) no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.Logueo .contanier{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.Logueo .contanier .text{
+    width: 60%;
+}
+.Logueo .contanier .text h4{
+    color: #fff;
+    font-size: 50px;
+    padding: 0px;
+}
+.Logueo .contanier .text span{
+    color: #379cf4;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+}
+.Logueo .contanier .text p{
+    color: #fff;
+    width: 80%;
+    margin: 20px 0 30px;
+    line-height: 1.8;
+}
+.Logueo .contanier .text .btn{
+    color: #fff;
+    background-color: #1465ad;
+    font-size: 17px;
+    padding: 14px 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.Logueo .contanier .text .btn:hover{
+    color: #1465ad;
+    background-color: #fff;
+}
+
+.sign{
+    width: 360px;
+    height: 440px;
+    border-radius: 10px;
+    background-color: #7da7d9;
+    text-align: center;
+    padding: 30px;
+    border: 2px solid black;
+}
+.sign h3{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.sign form input{
+    width: 100%;
+    outline: none;
+    padding: 12px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #7da7d9;
+    color: #fff;
+    margin-bottom: 20px;
+}
+::placeholder{
+    color: #fff;
+}
+.sign form button{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #7da7d9;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 0;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.sign form .Sign-with{
+    margin: 20px 0 20px;
+    color: #fff;
+}
+.sign form .icon-sign a i{
+    color: #fff;
+    font-size: 22px;
+    margin-right: 20px;
+}
+.sign form .icon-sign a i:hover{
+    color: #7da7d9;
+    transform: scale(1.3);
+}
+.sign form .account{
+    color: #fff;
+    margin: 40px 0 10px;
+}
+.sign form .sign-up{
+    color: #fff;
+}
+.sign form .sign-up a{
+    color: #7da7d9;
+    text-decoration: none;
+}
+.sign form .sign-up a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Categorias */
+
+
+.wrap{
+	max-width: 1100px;
+	width: 90%;
+	margin: auto;
+}
+
+.wrap > h1{
+	color: #ffffff;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 15px 0px;
+}
+
+.wrap > h1:after{image.png
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #C7C7C7;
+	margin: 20px 0;
+}
+
+.store-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.category_list{
+	display: flex;
+	flex-direction: column;
+	width: 18%;
+}
+
+.category_list .category_item{
+	display: block;
+	width: 90%;
+	padding: 15px 0;
+	margin-bottom: 20px;
+	background: #1465ad;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.category_list .ct_item-active{
+	background: #2D3E50;
+}
+
+
+/* PRODUCTOS */
+
+.products-list{
+	width: 82%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.products-list .product-item{
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.products-list .product-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.products-list .product-item a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.products-list .product-item img:hover {
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1100px){
+	.products-list .product-item{
+		width: 30.3%;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.category_list,
+	.products-list{
+		width: 100%;
+	}
+
+	.category_list{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.category_list .category_item{
+		align-self: flex-start;
+		width: 15%;
+		font-size: 14px;
+	}
+
+	.products-list .product-item{
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.category_list{
+		flex-direction: column;
+	}
+	.category_list .category_item{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	.products-list .product-item{
+		width: 47.5%;
+	}
+
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item:nth-child(2n+1){
+		margin-left: 0px;
+	}
+
+}
+
+@media screen and (max-width: 350px){
+	.products-list .product_item{
+		width: 100%;
+		margin-left: 0px;
+	}
+}
